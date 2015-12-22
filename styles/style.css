@@ -1,0 +1,11 @@
+#grides {
+width:600px;
+}
+#grides li {
+	list-style:none;	
+}
+ #grides li img {
+	float:left;
+	margin:5%;
+	}
+
