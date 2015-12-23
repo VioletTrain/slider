@@ -1,3 +1,6 @@
+body {
+	background-color: black;
+}
 #picture {
 	position: relative;
 	margin: 50px auto;
@@ -18,6 +21,7 @@
 	border-radius:10px;
 }
 button {
+	outline: none;
 	background-color: #FF0087;
 	border: 3px solid black;
 	border-radius:10px;
