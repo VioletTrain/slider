@@ -9,20 +9,25 @@ var slider = {
 		this.set(this.slides[this.frame]);
 	},
 	left: function() {
+		slider.frame--;
+		if(slider.frame<0) slider.frame = slider.slides.length-1;
+		slider.set(slider.slides[slider.frame]);
+	},
+	left_slide: function(){
+		setInterval(this.left, 1000)
 		
-		this.frame--;
-		if(this.frame<0) this.frame = this.slides.length-1;
-		this.set(this.slides[this.frame]);
 	},
 	right: function() {
-		this.frame++;
-		if(this.frame == this.slides.length) this.frame = 0;
-		this.set(this.slides[this.frame]);
+		slider.frame++;
+		if(slider.frame == slider.slides.length) slider.frame = 0;
+		slider.set(slider.slides[slider.frame]);
+	},
+	right_slide: function(){
+		setInterval(this.right, 1000)
+		
 	}
+	
 };
 window.onload = function () {
 	slider.init();
-	setInterval(function() {
-	slider.right();
-	}, 5000)
 	};
