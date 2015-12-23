@@ -1,7 +1,6 @@
 var slider = {
 	slides:['images/1.jpg', 'images/2.jpg', 'images/3.jpg', 'images/4.jpg',
 	'images/5.jpg', 'images/6.jpg','images/7.jpg', 'images/8.jpg', 'images/9.jpg'],
-	tim: 0,
 	frame: 0,
 	set: function(image) {
 		document.getElementById("imag").style.backgroundImage = "url("+image+")";
@@ -17,7 +16,7 @@ var slider = {
 		
 	},
 	left_slide: function(){
-		setTimeout(clearInterval(slider.right), 0);
+		clearInterval(slider.right);
 		setInterval(this.left, 2000)
 		
 	},
@@ -29,12 +28,12 @@ var slider = {
 		
 	},
 	right_slide: function(){
-		setTimeout(clearInterval(slider.left), 0);
+		clearInterval(slider.left);
 		setInterval(slider.right, 2000)	
 	},
 	stop: function() {
-		setTimeout(clearInterval(slider.right), 0);
-		setTimeout(clearInterval(slider.left), 0);
+		clearInterval(slider.left);
+		clearInterval(slider.right);
 	}
 	
 };
