@@ -1,11 +1,35 @@
-#grides {
-width:600px;
+#picture {
+	position: relative;
+	margin: 130px auto;
+	width: 650px;
+	height: 400px;
+	background-color: red;
+	border: 5px solid black;
+	border-radius: 15px;
 }
-#grides li {
-	list-style:none;	
+button {
+	background-color: red;
+	border-color: silver;
+	position: absolute;
+	top: 170px;
+	width: 50px;
+	height: 50px;
+	font: 20pt arial,tahoma,sans-serif;
+	text-align: center;
 }
- #grides li img {
-	float:left;
-	margin:5%;
-	}
-
+#imag {
+	margin:20px auto;
+	width: 500px;
+	height: 350px;
+	margin-top:20px;
+	background-color: red;
+	background-size:cover;
+	border: 5px dashed black;
+	border-radius:10px;
+}
+.left {
+	left:10px;
+}
+.right {
+	right:10px;
+}
