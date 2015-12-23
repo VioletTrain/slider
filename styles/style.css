@@ -1,3 +1,6 @@
+body {
+	background-color: black;
+}
 #picture {
 	position: relative;
 	margin: 50px auto;
